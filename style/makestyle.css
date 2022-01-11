@@ -1,0 +1,101 @@
+#carouselExampleIndicators{
+    margin-bottom: 100px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.container{
+    margin-bottom: 100px;
+}
+.btn-outline-success {
+    margin-right: 20px;
+}
+.col{
+    margin-left: 60px;
+}
+ .to-top{
+     float: right;
+     color:white;
+     padding-top:1.8em;
+     display:inline-block;/* or block */
+     position:relative;
+     border-color:white;
+     text-decoration:none;
+     transition:all .3s ease-out;
+ }
+.to-top:before{
+    content:'▲';
+    font-size:.9em;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-.7em;
+    border:solid .13em white;
+    border-radius:10em;
+    width:1.4em;
+    height:1.4em;
+    line-height:1.3em;
+    border-color:inherit;
+    transition:transform .5s ease-in;
+}
+.to-top:hover{
+    color:black;
+    border-color:black;
+}
+.to-top:hover:before {
+    transform: rotate(360deg);
+}
+.card{
+    border: 1px solid #CCC;
+}
+.card img{
+    width: 100%;
+    transition: all 0.3s;
+}
+.card:hover img{
+    transform: scale(1.05);
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+@keyframes In {
+    from{top: 50px} to {top: 100%}
+}
+.dropdown-menu{
+    animation: In 500ms;
+    position: relative;
+}
+.form{
+    width: 940px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+}
+.images{
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+.content{
+    border-left: 1px solid black;
+    float: right;
+    background-color: aliceblue;
+    width: 540px;
+    height: 450px;
+}
+a #register{
+    text-decoration: none;
+}
+.breadcrumb{
+    margin-left: 300px;
+    font-size: 20px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: darkgray;
+}
